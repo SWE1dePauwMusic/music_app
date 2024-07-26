@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "client": "cd frontend && npm run dev",
+    "server": "cd backend && npm run start",
+    "dev": "dotenv -e .env netlify dev"
+  }
+}
