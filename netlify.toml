@@ -1,10 +1,10 @@
 [build]
   functions = "backend/functions"
   publish = "frontend/dist"
-  command = "npm run build --prefix frontend"
+  command = "cd frontend && npm run build"
 
 [dev]
-  port = 5173
+  port = 8888
   functions = "backend/functions"
   framework= "vite"
   command = "npm run client"
