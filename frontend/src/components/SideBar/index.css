@@ -1,0 +1,105 @@
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    display: inline;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1c1b;
+}
+
+.navigation-component {
+    background-color: #222422;
+    border-radius: 8px;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+ 
+}
+
+.icon {
+    font-size: 25px;
+    object-fit: contain;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.library-component {
+    display: inline-block;
+    padding: 20px 10px 20px 20px;
+    width: 370px;
+    height: 100%;
+    margin-top: 5px;
+    background-color: #222422;
+    border-radius: 8px;
+}
+
+.library-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+.create-btn {
+    display: flex;
+    right: 0;
+    position: absolute;
+   
+}
+
+.right {
+    margin-left: 30px;
+}
+
+.search-sort {
+    display: flex;
+    left: 0;
+    justify-content: space-between;
+
+}
+
+.search-category {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.category-btn {
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.filert-btn {
+    display: flex;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
