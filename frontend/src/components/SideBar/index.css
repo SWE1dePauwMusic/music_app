@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 400px;
+    width: 200px;
     height: 100%;
     display: inline;
     flex-direction: column;
@@ -10,11 +10,10 @@
     z-index: 100;
     align-items: center;
     justify-content: center;
-    background-color: #1b1c1b;
+    background-color: rgb(103, 109, 226);
 }
 
 .navigation-component {
-    background-color: #222422;
     border-radius: 8px;
 }
 .nav-link {
@@ -41,10 +40,8 @@ span {
 .library-component {
     display: inline-block;
     padding: 20px 10px 20px 20px;
-    width: 370px;
     height: 100%;
     margin-top: 5px;
-    background-color: #222422;
     border-radius: 8px;
 }
 
