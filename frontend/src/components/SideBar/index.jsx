@@ -8,7 +8,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
-export const Sidebar = () => {
+const Sidebar = () => {
   const categories = ["Playlist", "Artists", "Album", "Podcast & Shows"];
   return (
     <div className="sidebar-container">
@@ -51,3 +51,5 @@ export const Sidebar = () => {
     </div>
   );
 };
+
+export default Sidebar;
