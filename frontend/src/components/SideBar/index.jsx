@@ -30,7 +30,7 @@ const Sidebar = () => {
       </div>
       <div className="search-container" href="#search">
         <FontAwesomeIcon icon={faTwitch} className="icon" />
-        <span>Search</span>
+        <span>Chat</span>
       </div>
     </div>
   );

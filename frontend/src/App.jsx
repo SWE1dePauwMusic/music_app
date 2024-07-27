@@ -8,27 +8,30 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Recent from './pages/Recent';
+import Playlist from './pages/Playlist';
+import Favorite from './pages/Favorite';
+import Chat from './pages/Chat';
 function App() {
   return (
-<<<<<<< HEAD
-    <div>
-      {/* <NavBar /> */}
-      <Sidebar />
-    </div>
-=======
     <Router> 
       <div>
-        <NavBar />
+        {/* <NavBar />
           <Routes>
             <Route path='/' element={ <Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
+          </Routes> */}
+        <Sidebar />
+        <Routes>
+            <Route path='/recent' element={ <Recent />} />
+            <Route path='/about' element={<Playlist />} />
+            <Route path='/services' element={<Favorite />} />
+            <Route path='/contact' element={<Chat />} />
           </Routes>
-        {/* <Sidebar /> */}
       </div>
     </Router>
->>>>>>> 6ae67fd7f0fbc1851b2fba3a33f4e8109b6cd308
   )
 }
 
