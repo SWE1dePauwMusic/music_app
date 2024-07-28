@@ -1,0 +1,61 @@
+.footer-container {
+    padding: 50px;
+}
+
+.letter-container {
+    padding: 20px 0 20px 0;
+}
+
+.email {
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: 1px solid lightblue;
+}
+
+h1, p, h4 {
+    padding: 10px 0 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.infor-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.sub-btn {
+    width: 90px;
+    height: 42px;
+    border-radius: 20px;
+    margin-left: -50px;
+    border: 1px solid rgb(63, 118, 130);
+    background-color: rgb(78, 143, 158);
+}
+
+.infor-container {
+    padding: 20px 0 20px 0;
+}
+
+.divider {
+    border-top: 1px solid rgb(218, 204, 204);
+    padding-bottom: 5px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    font-size: 25px;
+    padding: 0 2px 2px 2px;
+    margin: 10px;
+}

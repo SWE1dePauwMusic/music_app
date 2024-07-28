@@ -7,6 +7,7 @@ import Recent from './components/Recent';
 import Playlist from './components/Playlist';
 import Favorite from './components/Favorite';
 import Chat from './pages/Chat';
+import Footer from './components/Footer';
 function App() {
   return (
     <Router> 
@@ -18,13 +19,14 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
           </Routes> */}
-        <Sidebar />
+        {/* <Sidebar />
           <Routes>
             <Route path='/recent' element={ <Recent />} />
             <Route path='/about' element={<Playlist />} />
             <Route path='/services' element={<Favorite />} />
             <Route path='/contact' element={<Chat />} />
-          </Routes>
+          </Routes> */}
+          <Footer />
       </div>
     </Router>
   )
