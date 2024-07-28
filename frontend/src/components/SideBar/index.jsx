@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
@@ -7,12 +7,25 @@ import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
 import { faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./index.css";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handdleToggle = () => setIsOpen(!isOpen);
+
   return (
-    <div className="sidebar-container">
+    <div className={`sidebar-container ${isOpen ? "sidebar-open" : ""}`}>
+      <div className="toggle" onClick={handdleToggle}>
+      <FontAwesomeIcon icon={isOpen ? faAnglesLeft: faBars} className="icon" />
+      </div>
+      {/* <div className="search-container">
+        <input type="text" className="search-input"></input>
+        <FontAwesomeIcon icon={faMagnifyingGlass} className="icon search" />
+      </div> */}
       <div className="explore-container">
         <Link to="/explore">
           <h5>Explore</h5>
