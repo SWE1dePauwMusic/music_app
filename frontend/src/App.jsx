@@ -2,15 +2,10 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/SideBar'
-import NavBar from './components/NavBar/index.jsx'
-import Home from './pages/Home'
-import About from './pages/About'
-import Services from './pages/Services'
-import Contact from './pages/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Recent from './pages/Recent';
-import Playlist from './pages/Playlist';
-import Favorite from './pages/Favorite';
+import Recent from './components/Recent';
+import Playlist from './components/Playlist';
+import Favorite from './components/Favorite';
 import Chat from './pages/Chat';
 function App() {
   return (
@@ -24,7 +19,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
           </Routes> */}
         <Sidebar />
-        <Routes>
+          <Routes>
             <Route path='/recent' element={ <Recent />} />
             <Route path='/about' element={<Playlist />} />
             <Route path='/services' element={<Favorite />} />
