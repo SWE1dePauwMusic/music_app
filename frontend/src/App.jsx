@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/SideBar'
@@ -7,7 +8,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
-import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <Router> 
