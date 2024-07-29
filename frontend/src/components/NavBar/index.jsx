@@ -38,7 +38,6 @@ function NavbarComponent() {
               <FontAwesomeIcon
                 icon={faUser}
                 className='user-image'
-                noCaret="true"
                 onClick={() => console.log('user profile')}/>
             </div>
           }
