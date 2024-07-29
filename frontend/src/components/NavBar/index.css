@@ -1,9 +1,71 @@
 .navbar-container {
+    height: 60px;
+    font-size: 18px;
     width: 100%;
-    height: 80px;
+    background-color: rgb(219,220,255);
+    position: fixed;
+}
+
+.navbar-container .nav-link.active{
+    color: rgb(241, 0, 0);
+}
+
+.brand-name {
+    color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    min-width: 200px;
+    margin: 0;
+}
+
+.search-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: rgb(219,220,255);
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+}
+
+.search-input {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    right: 10%;
+    bottom: 50%;
+    transform:  translate(50%, 50%);
+}
+
+.user-image-container {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-user-dropdown {
+    color: transparent;
+}
+
+.user-image {
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    color: black;
+    cursor: pointer;
 }
