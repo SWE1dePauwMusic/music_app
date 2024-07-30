@@ -24,12 +24,12 @@ function App() {
           </div>
           <main className="main-content">
             <Routes>
-             
+              {/* navbar router */}
               <Route path='/' element={ <Home />} />
               <Route path='/about' element={<About />} />
               <Route path='/services' element={<Services />} />
               <Route path='/contact' element={<Contact />} />
-             
+              {/* sidebar router */}
               <Route path='/recent' element={ <Recent />} />
               <Route path='/playlist' element={<Playlist />} />
               <Route path='/favourite' element={<Favorite />} />
