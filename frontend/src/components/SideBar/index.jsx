@@ -1,43 +1,38 @@
 import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
-import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
-import { faTwitch } from "@fortawesome/free-brands-svg-icons";
-import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
-import { faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FaMicrophone, FaBookmark, FaMusic, FaClock, FaHeadphonesAlt, FaHeart, FaTwitch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./index.css";
 
 const SidebarContainer = () => {
   return (
     <div className="sidebar-container">
-      <Sidebar>
+      <Sidebar width="200px">
         <Menu
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
               // only apply styles on first level elements of the tree
               if (level === 0)
                 return {
-                  color: disabled ? "#f5d9ff" : "#d359ff",
-                  backgroundColor: active ? "#eecef9" : undefined,
+                  color: disabled ? "#d359ff" : "#d359ff",
+                  backgroundColor: active ? "#eecef9" : "#eecef9",
                 };
             },
           }}
         >
-         <SubMenu defaultOpen label="Charts" icon={<FontAwesomeIcon icon={faAnglesLeft} />}>
-          <MenuItem> Pie charts</MenuItem>
-          <MenuItem> Line charts</MenuItem>
-          <MenuItem> Bar charts</MenuItem>
+         <SubMenu disabled="False" label="Explore" active>
+          <MenuItem className="menu-item"><FaMicrophone className="icon sidebar-icon"/> Artists </MenuItem>
+          <MenuItem className="menu-item"><FaBookmark className="icon sidebar-icon"/> Albums </MenuItem>
+          <MenuItem className="menu-item"><FaMusic className="icon sidebar-icon"/>Genres </MenuItem>
         </SubMenu>
-        <MenuItem active icon={<FontAwesomeIcon icon={faAnglesLeft} />}>
-          Calendar (active)
-        </MenuItem>
+        <SubMenu disabled="False" label="My Library" active>
+          <MenuItem className="menu-item"><FaClock className="icon sidebar-icon"/> Recent </MenuItem>
+          <MenuItem className="menu-item"><FaHeadphonesAlt className="icon sidebar-icon"/>Playlist </MenuItem>
+          <MenuItem className="menu-item"><FaHeart className="icon sidebar-icon"/>Favorite</MenuItem>
+        </SubMenu>
+        <SubMenu disabled="False" label="My Chatbot" active>
+          <MenuItem className="menu-item"><FaTwitch className="icon sidebar-icon"/>Chat</MenuItem>
+        </SubMenu>
         </Menu>
       </Sidebar>
     </div>
