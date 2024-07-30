@@ -51,7 +51,6 @@
 .toggle-user-dropdown {
     color: transparent;
     margin-right: 30px;
-    border: 2px solid red;
 }
 
 .user-image-container {
@@ -63,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
 }
 
 .user-image {
