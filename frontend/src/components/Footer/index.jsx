@@ -1,11 +1,6 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { Row, Col, Container, Form, FormControl, Button } from "react-bootstrap";
+import { FaInstagram, FaTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import "./index.css";
 
 const Footer = () => {
@@ -19,12 +14,16 @@ const Footer = () => {
           </Col>
           <Col></Col>
           <Col className="subscribe-container">
-            <input
-              type="emai"
-              placeholder="Enter your email"
-              className="email"
-            ></input>
-            <button className="sub-btn">Subscribe</button>
+            <Form className='d-flex'>
+              <FormControl
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+                className="email-input"
+                aria-label="subcribe"
+              />
+              <Button className='sub-btn'>Subscribe</Button>
+            </Form>
           </Col>
         </Row>
         <Row className="infor-container">
