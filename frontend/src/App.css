@@ -11,14 +11,17 @@
 
 .sidebar {
   position: fixed;
+  flex-grow: 1;
 }
 .main-content {
   overflow-y: auto;
   padding-left: 200px;
+  flex-grow: 1;
 }
 
 .footer {
   position: absolute;
   margin-top: 100vh;
   width: calc(100vw - 200px);
+  flex-grow: 1;
 }
