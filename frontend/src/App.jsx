@@ -7,7 +7,7 @@ import Playlist from "./components/Playlist";
 import Favorite from "./components/Favorite";
 import Chat from "./pages/Chat";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar/index.jsx";
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
