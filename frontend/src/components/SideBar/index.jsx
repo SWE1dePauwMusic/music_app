@@ -20,17 +20,17 @@ const SidebarContainer = () => {
             },
           }}
         >
-         <SubMenu disabled="False" label="Explore" active>
+         <SubMenu defaultOpen="true" disabled="false" label="Explore" active>
           <MenuItem className="menu-item"><FaMicrophone className="icon sidebar-icon"/> Artists </MenuItem>
           <MenuItem className="menu-item"><FaBookmark className="icon sidebar-icon"/> Albums </MenuItem>
           <MenuItem className="menu-item"><FaMusic className="icon sidebar-icon"/>Genres </MenuItem>
         </SubMenu>
-        <SubMenu disabled="False" label="My Library" active>
+        <SubMenu defaultOpen="true" disabled="false" label="My Library" active>
           <MenuItem className="menu-item"><FaClock className="icon sidebar-icon"/> Recent </MenuItem>
           <MenuItem className="menu-item"><FaHeadphonesAlt className="icon sidebar-icon"/>Playlist </MenuItem>
           <MenuItem className="menu-item"><FaHeart className="icon sidebar-icon"/>Favorite</MenuItem>
         </SubMenu>
-        <SubMenu disabled="False" label="My Chatbot" active>
+        <SubMenu defaultOpen="true" disabled="false" label="My Chatbot" active>
           <MenuItem className="menu-item"><FaTwitch className="icon sidebar-icon"/>Chat</MenuItem>
         </SubMenu>
         </Menu>
