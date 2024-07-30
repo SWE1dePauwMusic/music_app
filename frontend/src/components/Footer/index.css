@@ -2,8 +2,6 @@
     background-color: rgb(219, 220, 255);
     color: black;
     padding: 30px;
-    border: 2px solid red;
-    justify-content: flex-end;
 }
 
 .footer-container h3 {
