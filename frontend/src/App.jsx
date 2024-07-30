@@ -19,8 +19,13 @@ function App() {
       <div className='app-container'>
         <NavBar />
         <div className="content-container">
+<<<<<<< HEAD
           <SidebarContainer />
           {/* <main className="main-content">
+=======
+          {/* <SidebarContainer /> */}
+          <main className="main-content">
+>>>>>>> 79cf0555d6b8b9dc98e85917076e65a8d1954bea
             <Routes>
              
               <Route path='/' element={ <Home />} />
@@ -33,8 +38,15 @@ function App() {
               <Route path='/favourite' element={<Favorite />} />
               <Route path='/chat' element={<Chat />} />
             </Routes>
+<<<<<<< HEAD
           </main> */}
           {/* <Footer /> */}
+=======
+          </main>
+        <div className="footer">
+          <Footer />
+>>>>>>> 79cf0555d6b8b9dc98e85917076e65a8d1954bea
+        </div>
         </div>
       </div>
     </Router>
