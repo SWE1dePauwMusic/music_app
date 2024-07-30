@@ -1,4 +1,58 @@
 .sidebar-container {
+<<<<<<< HEAD
+=======
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    display: inline;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 220, 255);
+    margin-top: 60px;
+    color: black;
+    font-size: 18px;
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.sidebar-container a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    width: 155px;
+    height: 30px;
+}
+
+.explore-container {
+    padding: 5px;
+}
+
+.library-container {
+    padding: 5px;
+}
+
+.chat-container {
+    padding: 5px;
+}
+
+.setting-container {
+    padding: 5px;
+}
+
+.nav-link {
+>>>>>>> 26036c9b33249755ead5723319327fd4b511c33c
     display: flex;
     height: 100%;
     min-height: 100vh;
