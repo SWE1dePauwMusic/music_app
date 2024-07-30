@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faPenFancy } from "@fortawesome/free-solid-svg-icons";
@@ -13,78 +14,34 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handdleToggle = () => setIsOpen(!isOpen);
-
+const SidebarContainer = () => {
   return (
-    <div className={`sidebar-container ${isOpen ? "sidebar-open" : ""}`}>
-      <div className="toggle" onClick={handdleToggle}>
-      <FontAwesomeIcon icon={isOpen ? faAnglesLeft: faBars} className="icon" />
-      </div>
-      {/* <div className="search-container">
-        <input type="text" className="search-input"></input>
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="icon search" />
-      </div> */}
-      <div className="explore-container">
-        <Link to="/explore">
-          <h5>Explore</h5>
-        </Link>
-        <div className="nav-link">
-          <FontAwesomeIcon icon={faPenFancy} className="icon" />
-          <Link to="/explore" className="side-link">
-            Artists
-          </Link>
-        </div>
-        <div className="nav-link" href="#search">
-          <FontAwesomeIcon icon={faLinesLeaning} className="icon" />
-          <Link to="/explore" className="side-link">
-            Albums
-          </Link>
-        </div>
-        <div className="nav-link" href="#search">
-          <FontAwesomeIcon icon={faMusic} className="icon" />
-          <Link to="/explore" className="side-link">
-            Genres
-          </Link>
-        </div>
-      </div>
-      <div className="library-container">
-        <Link to="/library">
-          <h5>My Library</h5>
-        </Link>
-        <div className="nav-link">
-          <FontAwesomeIcon icon={faClock} className="icon" />
-          <Link to="/library" className="side-link">
-            Recent
-          </Link>
-        </div>
-        <div className="nav-link">
-          <FontAwesomeIcon icon={faHeadphonesSimple} className="icon" />
-          <Link to="/library" className="side-link">
-            Playlist
-          </Link>
-        </div>
-        <div className="nav-link">
-          <FontAwesomeIcon icon={faHeart} className="icon" />
-          <Link to="/library" className="side-link">
-            Favourite
-          </Link>
-        </div>
-      </div>
-      <div className="chat-container">
-        <Link to="/library">
-          <h5>My Chatbot</h5>
-        </Link>
-        <div className="nav-link">
-          <FontAwesomeIcon icon={faTwitch} className="icon" />
-          <Link to="/chat" className="side-link">
-            Chat
-          </Link>
-        </div>
-      </div>
+    <div className="sidebar-container">
+      <Sidebar>
+        <Menu
+          menuItemStyles={{
+            button: ({ level, active, disabled }) => {
+              // only apply styles on first level elements of the tree
+              if (level === 0)
+                return {
+                  color: disabled ? "#f5d9ff" : "#d359ff",
+                  backgroundColor: active ? "#eecef9" : undefined,
+                };
+            },
+          }}
+        >
+         <SubMenu defaultOpen label="Charts" icon={<FontAwesomeIcon icon={faAnglesLeft} />}>
+          <MenuItem> Pie charts</MenuItem>
+          <MenuItem> Line charts</MenuItem>
+          <MenuItem> Bar charts</MenuItem>
+        </SubMenu>
+        <MenuItem active icon={<FontAwesomeIcon icon={faAnglesLeft} />}>
+          Calendar (active)
+        </MenuItem>
+        </Menu>
+      </Sidebar>
     </div>
   );
 };
 
-export default Sidebar;
+export default SidebarContainer;

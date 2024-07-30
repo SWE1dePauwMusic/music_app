@@ -2,7 +2,6 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './components/SideBar'
 import Recent from './components/Recent';
 import Playlist from './components/Playlist';
 import Favorite from './components/Favorite';
@@ -13,19 +12,20 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import SidebarContainer from './components/SideBar';
 function App() {
   return (
     <Router> 
       <div>
-        {/* <NavBar />
+        <NavBar />
           <Routes>
             <Route path='/' element={ <Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
-          </Routes> */}
-        {/* <Sidebar />
-          <Routes>
+          </Routes>
+       <SidebarContainer />
+          {/* <Routes>
             <Route path='/recent' element={ <Recent />} />
             <Route path='/about' element={<Playlist />} />
             <Route path='/services' element={<Favorite />} />
