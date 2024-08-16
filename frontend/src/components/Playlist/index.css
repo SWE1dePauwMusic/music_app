@@ -1,0 +1,31 @@
+.playlist-component-container {
+    padding: 1rem;
+    max-width: 300px;
+    border-radius: 5px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.playlist-component-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.playlist-component-card {
+    background-color: transparent;
+    border: none;
+}
+
+.playlist-component-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+
+.playlist-component-card .card-title{
+    margin: -0.5rem;
+}
+
+.playlist-component-card .card-text {
+    margin: -0.5rem;
+}
