@@ -1,0 +1,65 @@
+.song-component-container {
+    padding: 0;
+    margin: 20px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    line-height: 1;
+    width: 100%;
+}
+
+.song-component-container .song-image {
+    flex: 1;
+    height: 80%;
+    aspect-ratio: 1;
+}
+
+
+.song-component-container .song-name {
+    flex: 1;
+    border: 2px solid red;
+}
+
+.song-component-container .song-name .nav{
+   display: flex;
+   flex-direction: column;
+   color: white;
+}
+
+.song-component-container .nav-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.song-component-container .album-title {
+    flex: 1;
+    border: 2px solid red;
+}
+
+.song-component-container .song-duration {
+    flex: 1;
+    border: 2px solid red;
+}
+
+.song-component-container .song-dropdown {
+    flex: 1;
+    background-color: transparent;
+    position: relative;
+    border: 2px solid red;
+}
+
+.song-component-container .song-toggle-dropdonw {
+    background-color: transparent;
+}
+
+.song-component-container .more-btn {
+    color: white;
+}
+
+.song-component-container .test {
+    position: absolute;
+    border: 2px solid red;
+}

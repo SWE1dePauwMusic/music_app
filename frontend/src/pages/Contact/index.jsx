@@ -1,7 +1,10 @@
-import React from 'react';
-
+import React from "react";
+import Song from "../../components/Song";
+import "./index.css"
 const Contact = () => {
-  return <h2>Contact Page</h2>;
+  return (
+    <Song />
+  );
 };
 
 export default Contact;
